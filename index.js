@@ -31,16 +31,12 @@ const getRandomHexColor = () => {
   return `#${hexCode}`;
 };
 
-//console.log(getRandomHexColor());
 let hexCol = getRandomHexColor();
 console.log(hexCol);
 
 const colorName = GetColorName(hexCol); // returns 'Black'
-//console.log(hexCol);
 console.log(colorName);
 
-//console.log(chalk.colorName('Hello world!'));
-//console.log(chalk.blue('Hello') + ' World' + chalk.red('!'));
 console.log(chalk.hex(hexCol)('Hello, world!'));
 console.log(chalk.hex(hexCol)(''));
 console.log(chalk.hex(hexCol)('###############################'));
